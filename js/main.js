@@ -20,7 +20,7 @@ $(document).ready(function() {
   
     $(function() {
       typed.typed({
-        strings: ["Wiyoga Atmo Darwinto.", "Mechanical Engineering.", " Profesional Drafter.", "Web Developer ."],
+        strings: ["Wiyoga Atmo Darwinto.", "a Mechanical Engineering.", "a Drafter.", "a Web Developer."],
         typeSpeed: 100,
         loop: true,
       });
