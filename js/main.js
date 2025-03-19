@@ -20,10 +20,64 @@ $(document).ready(function() {
   
     $(function() {
       typed.typed({
-        strings: ["Wiyoga Atmo Darwinto.", "a Mechanical Engineering.", "a Drafter.", "a Web Developer."],
+        strings: ["Wiyoga Atmo Darwinto.", "a Mechanical Engineering.", "a Drafter."],
         typeSpeed: 100,
         loop: true,
       });
     });
   
   });
+
+  // Gambar Sortlisted //
+  document.addEventListener("DOMContentLoaded", function () {
+    const thumbnails = document.querySelectorAll(".thumbnail");
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("fullImage");
+    const modalDescription = document.getElementById("imageDescription");
+    const closeBtn = document.querySelector(".close");
+
+    thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener("click", function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalDescription.textContent = this.alt;
+        });
+    });
+
+    closeBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
+
+// Function Number Sortlist //
+document.addEventListener("DOMContentLoaded", function () {
+  const thumbnails = document.querySelectorAll(".thumbnail");
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("fullImage");
+  const modalDescription = document.getElementById("imageDescription");
+  const closeBtn = document.querySelector(".close");
+
+  thumbnails.forEach((thumbnail, index) => {
+      thumbnail.addEventListener("click", function () {
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          modalDescription.textContent = `Gambar ${index + 1}: ${this.alt}`;
+      });
+  });
+
+  closeBtn.addEventListener("click", function () {
+      modal.style.display = "none";
+  });
+
+  window.addEventListener("click", function (event) {
+      if (event.target === modal) {
+          modal.style.display = "none";
+      }
+  });
+});
