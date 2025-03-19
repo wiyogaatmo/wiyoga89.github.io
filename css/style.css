@@ -922,11 +922,12 @@ nav ul li a {
 }
 
 /* Professional Skill Style Box */
-body {
+
+.skills{
   font-family: 'Open Sans', sans-serif;
-  margin: 20px;
-  background-color: #f8f8f8;
-  color: #333;
+      margin: 20px;
+      background-color: #f8f8f8;
+      color: #333;
 }
 h1 {
   text-align: center;
