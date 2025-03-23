@@ -1,6 +1,6 @@
 body {
   /* Dua gambar latar belakang */
-  background-image: url('../images/portfolio/autocad.png'), url('path_to_bottom_image.jpg'); /* Ganti dengan path gambar Anda */
+  background-image: url('../images/Futuristic\ Background.jpg'), url('path_to_bottom_image.jpg'); /* Ganti dengan path gambar Anda */
       
   /* Posisi gambar latar belakang */
   background-position: top center, bottom center; /* Gambar atas di tengah, gambar bawah di bawah */
@@ -155,7 +155,7 @@ p {
 /*----Navbar------*/
 nav {
   position: fixed;
-  background-image: url('../images/portfolio/autocad5.png');
+  background-image: url('../images/Futuristic\ Background.jpg');
   z-index: 1000;
   width: 100%;
   padding: 20px;
